@@ -32,15 +32,15 @@ const Navbar = () => {
     <nav
       className={`fixed top-0 left-0 right-0 z-50 transition-all duration-500 ${
         scrolled
-          ? "bg-background/90 backdrop-blur-xl shadow-elegant border-b border-border"
-          : "bg-transparent"
+          ? "bg-charcoal/95 backdrop-blur-xl shadow-elegant border-b border-charcoal-light/30"
+          : "bg-charcoal/70 backdrop-blur-sm"
       }`}
     >
       <div className="container mx-auto flex items-center justify-between py-4 px-4">
         <Link to="/" className="flex items-center gap-2">
           <span className="font-display text-2xl font-bold tracking-tight">
-            <span className="text-gold">Prime</span>{" "}
-            <span className={scrolled ? "text-foreground" : "text-primary-foreground"}>Estate</span>
+            <span className="text-gold-dark">Prime</span>{" "}
+            <span className="text-gold-light">Estate</span>
           </span>
         </Link>
 
@@ -53,9 +53,7 @@ const Navbar = () => {
               className={`text-sm font-medium transition-colors duration-300 hover:text-gold ${
                 location.pathname === link.path
                   ? "text-gold"
-                  : scrolled
-                  ? "text-foreground/80"
-                  : "text-primary-foreground/80"
+                  : "text-gold-light/80"
               }`}
             >
               {link.label}
@@ -66,9 +64,7 @@ const Navbar = () => {
         <div className="hidden lg:flex items-center gap-3">
           <a
             href="tel:+923211234567"
-            className={`flex items-center gap-2 text-sm font-medium transition-colors ${
-              scrolled ? "text-foreground" : "text-primary-foreground"
-            }`}
+            className="flex items-center gap-2 text-sm font-medium transition-colors text-gold-light/90"
           >
             <Phone className="w-4 h-4 text-gold" />
             +92 321 1234567
@@ -78,7 +74,7 @@ const Navbar = () => {
         {/* Mobile Toggle */}
         <button
           onClick={() => setOpen(!open)}
-          className={`lg:hidden p-2 ${scrolled ? "text-foreground" : "text-primary-foreground"}`}
+          className="lg:hidden p-2 text-gold-light"
         >
           {open ? <X className="w-6 h-6" /> : <Menu className="w-6 h-6" />}
         </button>
