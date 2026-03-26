@@ -1,16 +1,35 @@
-// Update this page (the content is just a fallback if you fail to update the page)
+import HeroCarousel from "@/components/home/HeroCarousel";
+import FeaturedProperties from "@/components/home/FeaturedProperties";
+import PropertyCollections from "@/components/home/PropertyCollections";
+import DreamHome from "@/components/home/DreamHome";
+import NewArrivals from "@/components/home/NewArrivals";
+import HeroBanner from "@/components/home/HeroBanner";
+import AllProperties from "@/components/home/AllProperties";
+import DarkBanner from "@/components/home/DarkBanner";
+import Testimonials from "@/components/home/Testimonials";
+import AgentsSection from "@/components/home/AgentsSection";
+import Stats from "@/components/home/Stats";
+import ContactSection from "@/components/home/ContactSection";
+import Navbar from "@/components/layout/Navbar";
+import Footer from "@/components/layout/Footer";
 
-// IMPORTANT: Fully REPLACE this with your own code
-const PlaceholderIndex = () => {
-  // PLACEHOLDER: Replace this entire return statement with the user's app.
-  // The inline background color is intentionally not part of the design system.
-  return (
-    <div className="flex min-h-screen items-center justify-center" style={{ backgroundColor: '#fcfbf8' }}>
-      <img data-lovable-blank-page-placeholder="REMOVE_THIS" src="/placeholder.svg" alt="Your app will live here!" />
-    </div>
-  );
-};
-
-const Index = PlaceholderIndex;
+const Index = () => (
+  <>
+    <Navbar />
+    <HeroCarousel />
+    <FeaturedProperties />
+    <PropertyCollections />
+    <DreamHome />
+    <NewArrivals />
+    <HeroBanner />
+    <AllProperties />
+    <DarkBanner />
+    <Testimonials />
+    <AgentsSection />
+    <Stats />
+    <ContactSection />
+    <Footer />
+  </>
+);
 
 export default Index;
