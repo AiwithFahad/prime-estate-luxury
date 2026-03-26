@@ -39,8 +39,8 @@ const Navbar = () => {
       <div className="container mx-auto flex items-center justify-between py-4 px-4">
         <Link to="/" className="flex items-center gap-2">
           <span className="font-display text-2xl font-bold tracking-tight">
-            <span className="text-gold">Prime</span>{" "}
-            <span className={scrolled ? "text-foreground" : "text-primary-foreground"}>Estate</span>
+            <span className="text-gold-dark">Prime</span>{" "}
+            <span className="text-gold-light">Estate</span>
           </span>
         </Link>
 
