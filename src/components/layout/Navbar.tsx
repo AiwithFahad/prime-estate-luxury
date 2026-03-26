@@ -64,9 +64,7 @@ const Navbar = () => {
         <div className="hidden lg:flex items-center gap-3">
           <a
             href="tel:+923211234567"
-            className={`flex items-center gap-2 text-sm font-medium transition-colors ${
-              scrolled ? "text-foreground" : "text-primary-foreground"
-            }`}
+            className="flex items-center gap-2 text-sm font-medium transition-colors text-gold-light/90"
           >
             <Phone className="w-4 h-4 text-gold" />
             +92 321 1234567
