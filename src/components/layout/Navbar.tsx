@@ -53,9 +53,7 @@ const Navbar = () => {
               className={`text-sm font-medium transition-colors duration-300 hover:text-gold ${
                 location.pathname === link.path
                   ? "text-gold"
-                  : scrolled
-                  ? "text-foreground/80"
-                  : "text-primary-foreground/80"
+                  : "text-gold-light/80"
               }`}
             >
               {link.label}
