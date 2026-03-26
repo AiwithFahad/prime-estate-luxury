@@ -32,8 +32,8 @@ const Navbar = () => {
     <nav
       className={`fixed top-0 left-0 right-0 z-50 transition-all duration-500 ${
         scrolled
-          ? "bg-background/90 backdrop-blur-xl shadow-elegant border-b border-border"
-          : "bg-transparent"
+          ? "bg-charcoal/95 backdrop-blur-xl shadow-elegant border-b border-charcoal-light/30"
+          : "bg-charcoal/70 backdrop-blur-sm"
       }`}
     >
       <div className="container mx-auto flex items-center justify-between py-4 px-4">
